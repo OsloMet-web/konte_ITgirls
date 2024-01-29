@@ -1,0 +1,26 @@
+/*Legger til bakgrunnsfarge på menubar */
+.topnav {
+    background-color: blue;
+    overflow: hidden;
+}
+/* Styling på lenkene*/
+.topnav a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 2rem;
+    font-size: large;
+}
+/* Endre farge på lenken på der du er*/
+.topnav a:hover {
+    background-color: palevioletred;
+    color: lawngreen;
+}
+/* Fremhever siden du er på*/
+.topnav a.active {
+    background-color: blueviolet;
+    color: orangered;
+}
+
+
