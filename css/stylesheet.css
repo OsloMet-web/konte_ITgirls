@@ -1,3 +1,4 @@
+/* MENUBAR*/
 /*Legger til bakgrunnsfarge på menubar */
 .topnav {
     background-color: blue;
@@ -22,5 +23,6 @@
     background-color: blueviolet;
     color: orangered;
 }
+
 
 
