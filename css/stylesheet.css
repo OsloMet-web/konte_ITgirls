@@ -1,11 +1,9 @@
 /* MENUBAR*/
-/*Legger til bakgrunnsfarge på menubar */
-.topnav {
+.topnav {/*Legger til bakgrunnsfarge på menubar */
     background-color: blue;
     overflow: hidden;
 }
-/* Styling på lenkene*/
-.topnav a {
+.topnav a { /* Styling på lenkene*/
     float: left;
     display: block;
     color: black;
@@ -13,13 +11,11 @@
     padding: 2rem;
     font-size: large;
 }
-/* Endre farge på lenken på der du er*/
-.topnav a:hover {
+.topnav a:hover {/* Endre farge på lenken på der du er*/
     background-color: palevioletred;
     color: lawngreen;
 }
-/* Fremhever siden du er på*/
-.topnav a.active {
+.topnav a.active {/* Fremhever siden du er på*/
     background-color: blueviolet;
     color: orangered;
 }
