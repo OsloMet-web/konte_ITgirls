@@ -89,3 +89,33 @@ footer {
 .sub-title{
     font-size: 2.2rem;
 }
+
+
+@media  screen and (max-width:1200px){
+    .grid-container{
+        display: block !important; /*makes the grid container display as a block on devices with screen width less than 1200px*/
+    }
+ 
+}
+@media screen and (min-width:851px){
+    .column-div {    
+        float: left;
+        width: 33%;
+        text-align:center;
+        column-gap: 5px;
+        position: relative;
+    }
+    }
+@media screen and (max-width:850px){
+    .column-div{
+        display: block;
+        border: none;
+        align-content: center;
+        text-align: center;
+        padding: 14px;
+    }
+    #lecture-div, #canteen-div{
+        border: none; 
+    }
+
+}
