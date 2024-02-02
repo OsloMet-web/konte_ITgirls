@@ -34,7 +34,33 @@
 }
 .topnav a.active {/* Fremhever siden du er på*/
     
-    
 
 }
+.item1 { 
+    grid-area: header;
+    padding: 3rem;
+}
+.item2 { 
+    grid-area: menu;   
+    padding: 3rem;
+}
+.item3 { 
+    grid-area: main;   
+    padding: 3rem;
+}
+.item4 { 
+    grid-area: right;  
+    padding: 3rem; 
+}
 
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'left left right right'
+    'left left right right';
+  gap: 0.7rem;
+  background-color: rgb(52, 178, 216);
+  margin: 1rem;
+  color: rgb(218,245,255);
+  font-family: 'Times New Roman', Times, serif;
+}
