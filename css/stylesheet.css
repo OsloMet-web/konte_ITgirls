@@ -1,7 +1,14 @@
 /* MENUBAR*/
 .topnav {/*Legger til bakgrunnsfarge på menubar */
-    background-color: blue;
+    background-color: lightblue;
     overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+    
+  
 }
 .topnav a { /* Styling på lenkene*/
     float: left;
@@ -10,15 +17,25 @@
     text-align: center;
     padding: 2rem;
     font-size: large;
+    text-decoration: none;
+    
+ 
+    
 }
 .topnav a:hover {/* Endre farge på lenken på der du er*/
-    background-color: palevioletred;
-    color: lawngreen;
+    background-color: grey;
+    color: black;
+    border-radius: 15px;
+    
+
 }
 .topnav a.active {/* Fremhever siden du er på*/
-    background-color: blueviolet;
-    color: orangered;
+    background-color: lightcyan;
+    
+
 }
+
+
 
 
 
