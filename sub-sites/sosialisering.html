@@ -2,21 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="stylesheet" href="/css/stylesheet.css">
     <title>Sosialisering</title>
 </head>
 <body>
     <header>
         <nav>
-            <ul class="topnav" class="myTopnav"> 
-                <img class = "img-logo"src="/images/logo-it-prosjekt.png" alt="SkoleAnmelderneLogo">
-                <a href="/index.html" class="active">Hjem</a>
-                <a href="/sub-sites/topical.html" >Topical</a>
-                <a href="/sub-sites/accsess.html" >Accsessibility</a>
-                <a href="/sub-sites/sosialisering.html" >Sosialisering</a>
-                </ul>
+            <ul class="topnav" class="myTopnav"> ''
+                <img class = "img-logo"src="/images/skoleannmeldere-logo.png" alt="SkoleAnmelderneLogo">
+
+                <input type="checkbox" id="toggle-menu-checkbox">
+                <label for="toggle-menu-checkbox" class="toggle-menu">
+                    <div class="burger-bar"></div>
+                    <div class="burger-bar"></div>
+                    <div class="burger-bar"></div>
+                    <!--Main nav-menu-->
+                    <ul class="nav-main-container">
+                        <a class="nav-menu" href="/index.html" class="active">Hjem</a>
+                        <a class="nav-menu" href="/sub-sites/topical.html" >Topical</a>
+                        <a class="nav-menu" href="/sub-sites/accsess.html" >Accsessibility</a>
+                        <a class="nav-menu" href="/sub-sites/sosialisering.html" >Sosialisering</a>
+                    <!--Dropdown menu - hidden by default, the checkbox/burger-menu appears when the screen is less than 1080px in width-->
+                    <ul class="nav-dropdown">
+                        <a class="nav-menu" href="/index.html" class="active">Hjem</a>
+                        <a class="nav-menu" href="/sub-sites/topical.html" >Topical</a>
+                        <a class="nav-menu" href="/sub-sites/accsess.html" >Accsessibility</a>
+                        <a class="nav-menu" href="/sub-sites/sosialisering.html" >Sosialisering</a>
+                        <div class="x-line1"></div>
+                        <div class="x-line2"></div>
+                    </ul>
+                </label>
+            
+                
+        </ul>
         </nav>
+        </div>
+    
+
+        </div>
     </header>
     <main>
         <article>
@@ -67,8 +91,8 @@
         </div>
         <div class="some-kolonne">
             <ul>
-                <li><a href="https://www.facebook.com/oslomet/?locale=nb_NO"><img src="/images/facebook.png" alt="facebook-logo">Facebook</a></li>
-                <li><a href="https://www.instagram.com/oslomet/"><img src="/images/instagram.png" alt="instagram-logo">Instagram</a></li>
+                <li><a href="https://www.facebook.com/oslomet/?locale=nb_NO"><img src="/images/facebook.png" class="social-media" alt="facebook-logo">Facebook</a></li>
+                <li><a href="https://www.instagram.com/oslomet/"><img src="/images/instagram.png" class="social-media" alt="instagram-logo">Instagram</a></li>
             </ul>
         </div>
     </footer>
