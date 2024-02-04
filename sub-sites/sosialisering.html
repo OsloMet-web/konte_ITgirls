@@ -7,38 +7,24 @@
     <title>Sosialisering</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul class="topnav" class="myTopnav"> 
-                <img class = "img-logo"src="/images/skoleannmeldere-logo.png" alt="SkoleAnmelderneLogo">
-
-                <input type="checkbox" id="toggle-menu-checkbox">
-                <label for="toggle-menu-checkbox" class="toggle-menu">
-                    <div class="burger-bar"></div>
-                    <div class="burger-bar"></div>
-                    <div class="burger-bar"></div>
-                    <!--Main nav-menu-->
-                    <ul class="nav-main-container">
-                        <a class="nav-menu" href="/index.html" class="active">Hjem</a>
-                        <a class="nav-menu" href="/sub-sites/topical.html" >DATA1100</a>
-                        <a class="nav-menu" href="/sub-sites/accsess.html" >Tilgjengelighet</a>
-                        <a class="nav-menu" href="/sub-sites/sosialisering.html" >Sosialisering</a>
-                    <!--Dropdown menu - hidden by default, the checkbox/burger-menu appears when the screen is less than 1080px in width-->
-                    <ul class="nav-dropdown">
-                        <a class="nav-menu" href="/index.html" class="active">Hjem</a>
-                        <a class="nav-menu" href="/sub-sites/topical.html" >Topical</a>
-                        <a class="nav-menu" href="/sub-sites/accsess.html" >Accsessibility</a>
-                        <a class="nav-menu" href="/sub-sites/sosialisering.html" >Sosialisering</a>
-                        <div class="x-line1"></div>
-                        <div class="x-line2"></div>
-                    </ul>
-                </label>
-            
-                
-        </ul>
-        </nav>
+    <header class="header">
+        <div class="logo">
+            <a href="#">
+                <img src="/images/skoleannmeldere-logo.png" alt="">
+            </a>
         </div>
-    
+
+        <div class="navigation">
+            <input type="checkbox" class="toggle-menu">
+            <div class="hamburger"></div>
+
+            <ul class="menu">
+                <li><a href="/index.html">Hjem</a></li>
+                <li><a href="/sub-sites/accsess.html">Acsessibility</a></li>
+                <li><a href="/sub-sites/sosialisering.html">Sosialisering</a></li>
+                <li><a href="/sub-sites/topical.html">Topical</a></li>
+            </ul>
+        
 
         </div>
     </header>
