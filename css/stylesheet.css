@@ -1,3 +1,10 @@
+
+*{ 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
 body{
   background-color: whitesmoke;
   /* skriver 0 i marg så bakgrunnsfargen til menyen gå helt ut til sidene*/
@@ -9,36 +16,169 @@ body{
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.header{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(52, 178, 216);
+  padding: 0 25px;
+
+}
+
 /* MENUBAR*/
-.topnav {/*Legger til bakgrunnsfarge på menubar */
-    background-color: rgb(52, 178, 216);
-    overflow: hidden;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+.logo a {
+  display: block;
+}
+
+.logo a img{
+  display: block;
+  width: 30rem;
+  border-radius: 1rem;
+}
+
+.navigation{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   
 }
-.topnav a { /* Styling på lenkene*/
-    float: left;
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 2rem;
-    font-size: large;
-    text-decoration:none;
-    font-weight: bold;
-    font-size: 1.3rem;
-    
- 
-    
+
+.menu{
+  background-color: rgb(52, 178, 216);
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
 }
-.topnav a:hover {/* Endre farge på lenken på der du er*/
-    color: white;
-    font-size: 1.3rem;
 
-    
+.menu li{
+  list-style-type: none;
+  
+}
 
+.menu a{
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 2rem;
+  font-size: large;
+  text-decoration:none;
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.menu li a{
+  color: black;
+  text-decoration: none;
+  display: block;
+  padding: 40px 25px;
+  font-size: 18px;
+  line-height: 1;
+  font-size: 1.3rem;
+  
+  
+
+}
+
+.menu li a:hover{
+      color: white;
+      font-size: 1.3rem;
+}
+
+.hamburger{
+  position: relative;
+  width: 30px;
+  height: 4px;
+  background: black;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 2;
+
+}
+
+.hamburger:before,
+.hamburger:after{
+  content: "";
+  position: absolute;
+  height: 4px;
+  right: 0;
+  background: black;
+
+}
+
+.hamburger:before{
+  top: -10px;
+  width: 20px;
+}
+.hamburger:after{
+  top: 10px;
+  width: 25px;
+}
+
+
+.toggle-menu{
+  position: absolute;
+  width: 30px;
+  height: 100px;
+  z-index: 3;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.hamburger,
+.toggle-menu{
+  display: none;
+}
+
+
+.navigation input:checked ~ .menu{
+  right: 0;
+}
+
+.navigation input:checked ~ .menu{
+  right: 0;
+}
+
+@media screen and (max-width: 992px){
+  .hamburger,
+  .toggle-menu{
+      display: block;
+  }
+
+  .header{
+      padding: 10px 20px;
+  }
+  .menu{
+      justify-self: start;
+      flex-direction: column;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      right: -340px;
+      background-color: rgb(52, 178, 216);
+      width: 300px;
+      height: 100%;
+
+
+  }
+
+  .menu li{
+      width: 100%;
+  }
+  .menu li a{
+      padding: 30px;
+      font-size: 24px;
+ 
+  }
+  .menu li a:hover{
+     color: white;
+ 
+  }
 }
 
 .item1{grid-area: left;}
@@ -72,24 +212,22 @@ img{
   
   }
 footer {
-  background-color: rgb(52, 178, 216);
+  background-color: rgb(52, 178, 216);  
   display: flex; 
-  justify-content: space-around;
-  padding: 3rem;
-  line-height: 2rem;
+  justify-content: space-around; 
+  padding: 3rem;  
+  line-height: 2rem;  
   font-weight: bold;
 
-  a:link {
-    color: rgb(0, 0, 0);
-    text-decoration: none;
+  a:link {  
+    color: rgb(0, 0, 0);    
+    text-decoration: none;  
   }
-
 }
 
-ul {
-    list-style-type: none;
-  }
-
+ul {    
+  list-style-type: none;  
+}
 
 .text-content{
     font-size: 1.2rem;
@@ -102,7 +240,6 @@ ul {
 .sub-title{
     font-size: 2.2rem;
 }
-
 .intro-text {
   font-weight: bold;
   font-size: larger;
@@ -117,10 +254,8 @@ ul {
 height: 2rem;
 width: 2rem;
 padding-top: 1rem;
-
-
-
 }
+
 
 
 
@@ -141,8 +276,7 @@ footer {
 }
 header {
     display: grid;
-    grid-template-columns: minmax(20rem, 25rem) 
-    ;
+    grid-template-columns: minmax(20rem, 25rem);
     width: 100%;
     display: table;
     table-layout: fixed;
@@ -150,116 +284,5 @@ header {
 }
 }
 
- 
 
-.burger-list{
-        width: 35px;
-        height: 5px;
-        background-color: black;
-        margin: 6px 0;
-      
-}
 
-.navdrop{
-    display: none;
-    flex-direction: column;
-    margin-top: 0%;
-    right: 0; 
-    left: auto; 
-    background-color: #cb4f47;
-    z-index: 1; /*Making sure the dropdown appears over all other elements on the page.*/
-    border-radius: 0 0 10px 10px;
-    padding: 40px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    justify-content: center;
-    align-items: center;
-}
-
-.nav-main-container li {
-    margin-left: 10%;
-  }
-  /*Hiding the checkbox*/
-  #toggle-menu-checkbox {
-    display: none;
-  }
-  /*Dropdown that appears when the "burger-bar" checkbox is checked - hidden by default*/
-  .nav-dropdown {
-    display: none;
-    flex-direction: column;
-    margin-top: 0%;
-    right: 0; 
-    left: auto; 
-    background-color: #cb4f47;
-    z-index: 1; /*Making sure the dropdown appears over all other elements on the page.*/
-    border-radius: 0 0 10px 10px;
-    padding: 40px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  /*Hiding the nav-menu when the screen has a width of 1080px or less, the "hamburger" button will show up, when clicked the dropdown appears.*/
-  @media (max-width: 1080px) {
-    .toggle-menu{
-      display: flex; 
-      flex-direction: column; 
-      cursor: pointer; /*Changes what the mouse looks like to clearly show the user it's clickable. */
-      background-color: #000000;
-      width: 40px;
-      height: 36px;
-      margin-left: auto; 
-      margin-right: 7%;
-      border-radius: 4px;
-    }
-    /*Styling the burger-bars*/
-    .burger-bar{
-      width: 80%;
-      height: 4px;
-      background-color: rgb(245, 237, 227);
-      margin: 10%;
-      border-radius: 2px;
-    }
-    /*Made my own clickable "X" that changes size depending on screen width, so that I avoid adding a button.*/
-    .x-line1{
-      width: 8%;
-      height: 5px;
-      background-color: rgb(245, 237, 227);
-      border-radius: 2px;
-      margin-left: auto;
-      transform: rotate(45deg) translate(6.5px, 5px);
-    }
-    .x-line2{
-      width: 8%;
-      height: 5px;
-      background-color: rgb(245, 237, 227);
-      border-radius: 2px;
-      margin-left: auto;
-      transform: rotate(-45deg) translate(-2px, 3px);
-    }
-    .nav-dropdown {
-      margin-bottom: 20px;
-    }
-    #toggle-menu-checkbox {
-      display: none;
-    }
-    .toggle-menu:hover {
-      background-color: gray;
-    }
-    .nav-main-container{
-      display: none;
-    }
-    /*Source for inspiration for the checkbox, so that I can avoid the use of JS: https://www.youtube.com/watch?v=qdYNYsV9_08&ab_channel=KevinPowell*/
-    input:checked + .toggle-menu .x-line1 { 
-      display: flex;
-    }
-    input:checked + .toggle-menu .x-line2 {
-      display: flex;
-    }
-    input:checked + .toggle-menu .nav-dropdown{
-      display: flex;
-    }
-  }
