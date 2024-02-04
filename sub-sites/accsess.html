@@ -12,15 +12,54 @@
         <ul class="topnav" class="myTopnav"> 
             <img class = "img-logo"src="/images/skoleannmeldere-logo.png" alt="SkoleAnmelderneLogo">
             <a href="/index.html" class="active">Hjem</a>
-            <a href="/sub-sites/topical.html" >Topical</a>
-            <a href="/sub-sites/accsess.html" >Accsessibility</a>
+            <a href="/sub-sites/topical.html" >DATA1100</a>
+            <a href="/sub-sites/accsess.html" >Tilgjengelighet</a>
             <a href="/sub-sites/sosialisering.html" >Sosialisering</a>
             </ul>
             <div class="burger-list"></div>
             <div class="burger-list"></div>
             <div class="burger-list"></div>
+
+        <h1 class="main-title">Accessibility</h1>
     </nav>
 </header>
+
+<main>
+    <article class="accessibility"><!--Klasseattributtet spesifiserer ett eller flere klassenavn for et element (til bruk i css)-->
+            <p class="intro-text">Som webutviklere er det viktig når man lager nettsider at man gjør det tilgjengelig og brukervennlig for alle. Det finnes folk som trenger 
+            «hjelpemidler», som for eksempel de som sliter med syn (enten at de ikke kan se visse farger eller like bra som andre), hørsel eller andre nedsatte 
+            funksjonsevner.</p>      
+            <img class="main-img" src="/eksamen-it-girls/images/accessibility-test2.png" alt="accessibility-test">
+            <p class="caption">Skjermbilde av performance.</p>
+
+        <h2 class="subtitle">Bilder og kontraster</h2>
+            <p class="text-content">Vi har bevisst gjort nettsiden vår strukturert og ryddig for at brukeren kan lett navigere. Ved første blikkfang ser man bildene til 
+            siden. Etterpå ser man overskriften og meny-baren. Dette hjelper brukeren å vite hvor de er og øker brukervennligheten. Vi har skrevet alt-tekst til hvert 
+            bilde. Dermed, hvis det er noe feil med bildet eller enheten brukeren er på, vil de fremdeles ha en anelse på hva det er bilde av.  </p>
+            <p class="text-content">Vi har sørget for å ha kontraster på nettsiden, og har bevisst satt bakgrunnen som hvit, og teksten svart. Dette gjør at det er lettere for alle å lese. Svart
+            og hvit er også nøytrale farger som ikke er slitsomt å se på. Linkene i footeren bytter farge etter du har besøkt sidene. Den er heller ikke for liten, og 
+            plassert på logiske og klare områder på nettsiden. Alt dette gjør nettsiden mer brukervennlig for de med nedsatt syn. </p>
+        <h2 class="subtitle">Navigasjon</h2>
+            <p class="text-content">Vi plasserte meny-baren øverst. Dette gjør den lett å finne og navigere med, uansett hvilken side du er på. Bakgrunnen er en annen farge 
+            enn body delen. Det gjør meny-baren betydelig lettere å finne frem. Teksten byttet vi til hvit fordi det var mer kontrast enn ved bruk av svart tekst, som vi
+            bruker ellers på siden. Vi har også bestemt oss for å bruke «hover-selector» på meny-baren slik at brukeren vet hvilken av de ulike knappene de er på vei 
+            til å trykke på. De forskjellige knappene er også i samme linje som gir meny-baren mer struktur. Brukeren trenger ikke å flytte på musen så mye. </p>
+            <p class="text-content">Nettsiden er lett for ikke-norsktalende brukere å navigere. Den er lite komplisert og har en stabil layout (også mellom de forskjellige 
+            sidene) på nettsiden. Bildene er også en hjelpende faktor.</p>
+        <h2 class="subtitle">Skriftfarge</h2>
+            <p class="text-content">Linker er lett å finne fordi de er blå og har strek under. Automatisk blir de besøkte nettstedene lilla, men vi endret det til mørkeblå 
+            så den fikk større kontraster fra den lilla bakgrunnen.</p>
+            <p class="text-content">Fotograf og dato til bildene er lysegrå som skaper et tydelig skille mot bildeteksten. Dette kan føre til lavere kontrast mellom 
+            bakgrunn og tekst, men gjør det også lettere å få et kjapt overblikk.</p>
+        <h2 class="subtitle">Accessibility i koden</h2>
+            <p class="text-content">På CCS stylesheeten vår er kodene kun long-hand for at det skal bli mer oversiktlig. Vi har også kommentert alle semantic elements, css 
+            selectors, class selectors og alt med scaling. Elementene i HTML-koden er strukturert i korrekt hierarki. Det er heller ikke noe unødvendige repeterte 
+            elementer. Alle id-verdier og klasser er også unike fra hverandre, og skrevet på ett språk (engelsk). Koden er kontinuerlig ved at vi bruker samme 
+            størrelser og struktur. Vi valgte å bruke to css stylesheets, fordi vi hadde lyst til å vise ekstra ferdigheter ved å lage en av sidene våre i et annet 
+            design. Dermed, ble det ryddigere og mer oversiktlig å ha to stykk. Alt dette bidrar til bedre lesbarhet i HTML og CSS koden, og gjør det enklere for andre 
+            programmere å fortsette på arbeidet.</p>
+    </article>
+</main>
 <footer> <!--Tre kololonne i nederste del av nettside -->
     <div class="epost-kolonne">
         <ul>
@@ -38,8 +77,8 @@
     </div>
     <div class="some-kolonne">
         <ul>
-            <li><a href="https://www.facebook.com/oslomet/?locale=nb_NO"><img src="/images/facebook.png" class="social-media" alt="facebook-logo">Facebook</a></li>
-            <li><a href="https://www.instagram.com/oslomet/"><img src="/images/instagram.png" class="social-media" alt="instagram-logo">Instagram</a></li>
+            <li><a href="https://www.facebook.com/oslomet/?locale=nb_NO"><img src="/images/facebook.png" class="social-media" alt="facebook-logo"></a></li>
+            <li><a href="https://www.instagram.com/oslomet/"><img src="/images/instagram.png" class="social-media" alt="instagram-logo"></a></li>
         </ul>
     </div>
 </footer>
