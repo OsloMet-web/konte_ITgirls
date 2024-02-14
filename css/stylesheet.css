@@ -212,15 +212,22 @@ ul {   /*generell styling for type liste som brukes*/
 
 .text-content{ /*generell tekststørrelse*/
     font-size: 1.2rem;
+    margin: 3rem;
 }
 
 .main-title{ /*hovedoverskrift*/
     font-size: 2.2rem;
 }
 
+.sub-title{
+  font-size: 1.7rem;
+  margin: 3rem;
+}
+
 .intro-text { /*p klasse gjort spesifisert styling endringer*/
   font-weight: bold;
   font-size: larger;
+  margin: 3rem;
 }
 
 .caption {/*bildetekst, styler til lysegrå tekst*/
