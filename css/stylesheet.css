@@ -171,19 +171,19 @@ body{
   }
 }
 
-.item1 { grid-area: left; }
+.item1 { grid-area: text1; }
 .item2 { grid-area: picture2; }
 .item3 { grid-area: picture3; }
-.item4 { grid-area: right; }
-.item5 { grid-area: left;}
+.item4 { grid-area: text4; }
+.item5 { grid-area: text5;}
 .item6 { grid-area: picture6; }
 
 .grid-container {
   display: grid;
   grid-template-areas:
-    'left left picture2 picture2'
-    'picture3 picture3 right right'
-    ' main main picture6 picture6' ;
+    'text1 text1 picture2 picture2'
+    'picture3 picture3 text4 text4'
+    'text5 text5 picture6 picture6' ;
 
     gap: 10px;
     background-color: whitesmoke;
