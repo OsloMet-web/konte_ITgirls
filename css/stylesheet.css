@@ -60,7 +60,7 @@ body{
   font-size: 1.3rem;
 }
 
-.menu li a{ /* */
+.menu li a{ 
   color: black;
   text-decoration: none;
   display: block;
@@ -171,6 +171,7 @@ body{
   }
 }
 
+/*dette gir navn til hver gridboksene som vi skal plassere på nettsiden */
 .item1 { grid-area: text1; }
 .item2 { grid-area: picture2; }
 .item3 { grid-area: picture3; }
@@ -178,7 +179,7 @@ body{
 .item5 { grid-area: text5;}
 .item6 { grid-area: picture6; }
 
-.grid-container {
+.grid-container { /*plasserer grid boksene riktig plass*/
   display: grid;
   grid-template-areas:
     'text1 text1 picture2 picture2'
@@ -191,7 +192,7 @@ body{
 
 }
 
-.grid-container > div {
+.grid-container > div { /*styler grid boksene*/
   background-color: whitesmoke;
   text-align: center;
   padding: 3rem ;
@@ -202,41 +203,38 @@ img{
   width: 30rem;
   border-radius: 1rem;
   }
+/*slutt grid*/
 
-
-
-ul {    
+/*spesifike stylinger*/
+ul {   /*generell styling for type liste som brukes*/ 
   list-style-type: none;  
 }
 
-.text-content{
+.text-content{ /*generell tekststørrelse*/
     font-size: 1.2rem;
 }
 
-.main-title{
+.main-title{ /*hovedoverskrift*/
     font-size: 2.2rem;
 }
-.subTitle{
-  font-size:1 1.7rem;
-}
 
-.intro-text {
+.intro-text { /*p klasse gjort spesifisert styling endringer*/
   font-weight: bold;
   font-size: larger;
 }
 
-.caption {
+.caption {/*bildetekst, styler til lysegrå tekst*/
   font-style: italic;
   color: rgb(95, 92, 92);
 }
 
-.social-media{
-height: 2rem;
-width: 2rem;
-padding-top: 1rem;
+.social-media{ /* tydelige sosialemedie ikoner*/
+height: 2.5rem;
+width: 2.5rem;
+padding-top: 0.5rem;
 }
 
-footer {
+footer { /* */
   background-color: rgb(52, 178, 216);  
   display: flex; 
   justify-content: space-around; 
@@ -251,14 +249,14 @@ footer {
 }
 
 
-/*hvordan nettsiden vil se ut i mindre format/skjerm*/
+/*her tror vi det er scaling???*/
 @media  screen and (max-width: 75rem){ 
     .grid-container{
         display: block !important; 
         flex-direction: column;
  
 } 
-footer { /*legger deg under hverandre */
+footer { 
     display: grid;
     grid-template-columns: minmax(20rem, 25rem) 
     ;
@@ -276,6 +274,5 @@ header {
     border-spacing: 1.2rem;
 }
 }
-
 
 
