@@ -235,7 +235,8 @@ padding-top: 0.5rem;
 }
 
 footer { /* */
-  background-color: rgb(52, 178, 216);  
+  background-color: rgb(247, 250, 251);  
+  border-top: solid;
   display: flex; 
   justify-content: space-around; 
   padding: 2.5rem;  
@@ -247,7 +248,6 @@ footer { /* */
     text-decoration: none;  
   }
 }
-
 
 /*her tror vi det er scaling???*/
 @media  screen and (max-width: 75rem){ 
