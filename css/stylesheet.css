@@ -255,7 +255,7 @@ padding-top: 1rem;
         flex-direction: column;
  
 } 
-footer {
+footer { /*legger deg under hverandre */
     display: grid;
     grid-template-columns: minmax(20rem, 25rem) 
     ;
@@ -264,7 +264,7 @@ footer {
     table-layout: fixed;
     border-spacing: 1.2rem;
 }
-header {
+header {/*legger deg under hverandre, mer oversiklig når nettisden er i mindre format.  */
     display: grid;
     grid-template-columns: minmax(20rem, 25rem);
     width: 100%;
