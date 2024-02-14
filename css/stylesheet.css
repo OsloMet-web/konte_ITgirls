@@ -38,7 +38,7 @@ body{
 }
 
 
-.menu{
+.menu{ /*Menybaren vil være blå i bakgrunn og vil være utbredt med lik avstand mellom knappene*/
   background-color: rgb(52, 178, 216);
   display: flex;
   flex-direction: row;
@@ -60,7 +60,7 @@ body{
   font-size: 1.3rem;
 }
 
-.menu li a{
+.menu li a{ /* */
   color: black;
   text-decoration: none;
   display: block;
@@ -69,7 +69,7 @@ body{
   line-height: 1;
   font-size: 1.3rem;
   
-  /*slutta her*/
+  /*slutter her*/
 
 }
 
@@ -132,7 +132,7 @@ body{
   right: 0;
 }
 
-@media screen and (max-width: 992px){
+@media screen and (max-width: 992px){ /*hvordan nettsiden vil se ut i mindre format/skjerm*/
   .hamburger,
   .checkbox-menu{
       display: block;
@@ -141,7 +141,7 @@ body{
   .header{
       padding: 10px 20px;
   }
-  .menu{
+  .menu{ /*menybaren vil legge seg nedover og oversiklig når siden er i mindre format*/
       justify-self: start;
       flex-direction: column;
       align-items: center;
