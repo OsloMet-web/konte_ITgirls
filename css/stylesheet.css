@@ -171,24 +171,23 @@ body{
   }
 }
 
-.item1 {grid-area: left;}
-.item2 {grid-area: picture2;}
-.item3 {grid-area: right;}
-.item4 {grid-area: picture4;}
-.item5 {grid-area:}
-.item6 {grid-area: picture6;}
-
-
+.item1 { grid-area: left; }
+.item2 { grid-area: picture2; }
+.item3 { grid-area: picture3; }
+.item4 { grid-area: right; }
+.item5 { grid-area: left;}
+.item6 { grid-area: picture6; }
 
 .grid-container {
   display: grid;
   grid-template-areas:
     'left left picture2 picture2'
-    'right right picture4 picture4'
-    'main main picture6 picture6';
-  gap: 10px;
-  background-color: whitesmoke;
-  padding: 10px;
+    'picture3 picture3 right right'
+    ' main main picture6 picture6' ;
+
+    gap: 10px;
+    background-color: whitesmoke;
+   padding: 10px;
 
 }
 
@@ -204,19 +203,7 @@ img{
   border-radius: 1rem;
   }
 
-footer {
-  background-color: rgb(52, 178, 216);  
-  display: flex; 
-  justify-content: space-around; 
-  padding: 3rem;  
-  line-height: 2rem;  
-  font-weight: bold;
 
-  a:link {  
-    color: rgb(0, 0, 0);    
-    text-decoration: none;  
-  }
-}
 
 ul {    
   list-style-type: none;  
@@ -228,6 +215,9 @@ ul {
 
 .main-title{
     font-size: 2.2rem;
+}
+.subTitle{
+  font-size:1 1.7rem;
 }
 
 .intro-text {
@@ -246,10 +236,23 @@ width: 2rem;
 padding-top: 1rem;
 }
 
+footer {
+  background-color: rgb(52, 178, 216);  
+  display: flex; 
+  justify-content: space-around; 
+  padding: 3rem;  
+  line-height: 2rem;  
+  font-weight: bold;
+
+  a:link {  
+    color: rgb(0, 0, 0);    
+    text-decoration: none;  
+  }
+}
 
 
-
-@media  screen and (max-width: 75rem){ /*hvordan nettsiden vil se ut i mindre format/skjerm*/
+/*hvordan nettsiden vil se ut i mindre format/skjerm*/
+@media  screen and (max-width: 75rem){ 
     .grid-container{
         display: block !important; 
         flex-direction: column;
