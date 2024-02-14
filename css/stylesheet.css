@@ -171,38 +171,39 @@ body{
   }
 }
 
-.item1{grid-area: left;}
-.item2{grid-area: picture2;}
-.item3 { grid-area: right; }
-.item4 { grid-area: picture4; }
+.item1 {grid-area: left;}
+.item2 {grid-area: picture2;}
+.item3 {grid-area: right;}
+.item4 {grid-area: picture4;}
+.item5 {grid-area:}
+.item6 {grid-area: picture6;}
 
 
 
 .grid-container {
   display: grid;
   grid-template-areas:
-    ' left left picture2 picture2'
+    'left left picture2 picture2'
     'right right picture4 picture4'
     'main main picture6 picture6';
   gap: 10px;
- background-color: whitesmoke;
+  background-color: whitesmoke;
   padding: 10px;
 
 }
 
 .grid-container > div {
-   background-color: whitesmoke;
+  background-color: whitesmoke;
   text-align: center;
-    padding: 3rem ;
+  padding: 3rem ;
 }
 
 img{
   /*setter bredden og høyden til bildet til 50rem og 35rem. Vi bruker rem for å få en responsiv nettside.*/
-    width: 30rem;
-    border-radius: 1rem;
-    
-  
+  width: 30rem;
+  border-radius: 1rem;
   }
+
 footer {
   background-color: rgb(52, 178, 216);  
   display: flex; 
@@ -229,9 +230,6 @@ ul {
     font-size: 2.2rem;
 }
 
-.sub-title{
-    font-size: 2.2rem;
-}
 .intro-text {
   font-weight: bold;
   font-size: larger;
