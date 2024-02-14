@@ -15,7 +15,7 @@ body{
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.header{
+.header{ /* */
   position: relative;
   width: 100%;
   display: flex;
@@ -31,7 +31,7 @@ body{
   display: block;
 }
 
-.logo a img{
+.logo a img{ /* */
   display: block;
   width: 30rem;
   border-radius: 1rem;
@@ -78,7 +78,9 @@ body{
       font-size: 1.3rem;
 }
 
-.hamburger{
+/*hamburger */
+
+.hamburger{ 
   position: relative;
   width: 1.8rem;
   height: 0.25rem;
@@ -122,7 +124,7 @@ body{
 .checkbox-menu{
   display: none;
 }
-
+/*hamburger */
 
 .navigation input:checked ~ .menu{
   right: 0;
@@ -264,7 +266,7 @@ footer { /*legger deg under hverandre */
     table-layout: fixed;
     border-spacing: 1.2rem;
 }
-header {/*legger deg under hverandre, mer oversiklig når nettisden er i mindre format.  */
+header { 
     display: grid;
     grid-template-columns: minmax(20rem, 25rem);
     width: 100%;
