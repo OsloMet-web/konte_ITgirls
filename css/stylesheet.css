@@ -233,6 +233,7 @@ ul {   /*generell styling for type liste som brukes*/
 .caption {/*bildetekst, styler til lysegrå tekst*/
   font-style: italic;
   color: rgb(95, 92, 92);
+  text-align: center;
 }
 
 .social-media{ /* tydelige sosialemedie ikoner*/
@@ -241,6 +242,15 @@ width: 2.5rem;
 padding-top: 0.5rem;
 }
 
+#skoletilbudetOrakel{ /*sentrerer spesifikt dette bildet*/
+  display: block;
+  margin: auto;
+}
+
+#accessibility-test{/*sentrerer spesifikt dette bildet*/
+  display: block;
+  margin: auto;
+}
 footer { /* */
   background-color: rgb(247, 250, 251);  
   border-top: solid;
