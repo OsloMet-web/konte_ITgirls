@@ -31,7 +31,7 @@ body{
   display: block;
 }
 
-.logo a img{ /* */
+.logo a img{ /*Bilde design */
   display: block;
   width: 30rem;
   border-radius: 1rem;
@@ -45,17 +45,14 @@ body{
   justify-content: space-evenly;
 }
 
-.menu li{
-  list-style-type: none;
-  
-}
 
-.menu a{
+
+.menu a{ /*design til meny */
   float: left;
   display: block;
   color: black;
   font-size: large;
-  text-decoration:none;
+  text-decoration: none;
   font-weight: bold;
   font-size: 1.3rem;
 }
@@ -69,25 +66,27 @@ body{
   line-height: 1;
   font-size: 1.3rem;
   
+  
   /*slutter her*/
 
 }
 
-.menu li a:hover{
+.menu li a:hover{ /*menyknappene blir hvit når man har musen over*/
       color: white;
-      font-size: 1.3rem;
+ 
+      
 }
 
 /*hamburger */
 
-.hamburger{ 
+.hamburger{  /*Deign på menyknappene i scailing. Det er de tre strekene(hamburger) som kommer opp*/
   position: relative;
   width: 1.8rem;
   height: 0.25rem;
   background: black;
-  border-radius: 0.6rem;
   cursor: pointer;
   z-index: 2;
+  
 
 }
 
@@ -101,58 +100,51 @@ body{
 
 }
 
-.hamburger:before{
-  top: -10px;
-  width: 20px;
+.hamburger:before{ /*hamburger streken på toppen i menybaren*/
+  top: -0.6rem;
+  width: 1.25rem;
 }
-.hamburger:after{
-  top: 10px;
-  width: 25px;
+.hamburger:after{/*hamburger streken på bunnen i menybaren*/
+  top: 0.6rem;
+  width: 1.25rem;
 }
 
 
-.checkbox-menu{
+.checkbox-menu{ /*en checkboks for menyknappen for å få ut meny delen*/
   position: absolute;
-  width: 30px;
-  height: 100px;
+  width: 1.8rem;
+  height: 6.25rem;
   z-index: 3;
   cursor: pointer;
   opacity: 0;
 }
 
-.hamburger,
-.checkbox-menu{
-  display: none;
-}
 /*hamburger */
 
-.navigation input:checked ~ .menu{
+
+.navigation input:checked ~ .menu{  /* Når inndatafeltet er sjekket, vises menyen ved å plassere den til høyre */
   right: 0;
 }
 
-.navigation input:checked ~ .menu{
-  right: 0;
-}
-
-@media screen and (max-width: 992px){ 
+@media screen and (max-width: 62rem){   /* Når skjermstørrelsen er 992 piksler eller mindre vises både .hamburger og .checkbox-menu som blokkelementer*/
   .hamburger,
   .checkbox-menu{
       display: block;
   }
 
   .header{
-      padding: 10px 20px;
+      padding: 0.6rem 1.25rem;
   }
-  .menu{ 
-      justify-self: start;
-      flex-direction: column;
-      align-items: center;
+  .menu{ /*stil på meny, hvor den skal ligge og posisjonen til infoen inni */
+      flex-direction: column; 
+      align-items: center; 
       position: fixed;
       top: 0;
-      right: -340px;
+      right: -21.25rem;
       background-color: rgb(52, 178, 216);
-      width: 300px;
+      width: 18.75rem;
       height: 100%;
+      margin-top: 1.25rem;
 
 
   }
@@ -161,14 +153,10 @@ body{
       width: 100%;
   }
   .menu li a{
-      padding: 30px;
-      font-size: 24px;
+      font-size: 1.5rem;
  
   }
-  .menu li a:hover{
-     color: white;
- 
-  }
+
 }
 
 /*dette gir navn til hver gridboksene som vi skal plassere på nettsiden */
@@ -186,9 +174,9 @@ body{
     'picture3 picture3 text4 text4'
     'text5 text5 picture6 picture6' ;
 
-    gap: 10px;
+    gap: 0.625rem;
     background-color: whitesmoke;
-   padding: 10px;
+   padding: 0.625rem;
 
 }
 
