@@ -27,22 +27,12 @@ body{
 }
 
 /* MENYBAR*/
-.logo a {
-  display: block;
-}
-
-.logo a img{ /*Bilde design */
-  display: block;
-  width: 30rem;
-  border-radius: 1rem;
-}
-
-
 .menu{ /*Menybaren vil være blå i bakgrunn og vil være utbredt med lik avstand mellom knappene*/
   background-color: rgb(52, 178, 216);
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+  padding-top: 2rem;
 }
 
 
@@ -145,8 +135,6 @@ body{
       width: 18.75rem;
       height: 100%;
       margin-top: 1.25rem;
-
-
   }
 
   .menu li{
@@ -154,9 +142,7 @@ body{
   }
   .menu li a{
       font-size: 1.5rem;
- 
   }
-
 }
 
 /*dette gir navn til hver gridboksene som vi skal plassere på nettsiden */
@@ -205,6 +191,7 @@ ul {   /*generell styling for type liste som brukes*/
 
 .main-title{ /*hovedoverskrift*/
     font-size: 2.2rem;
+    margin: 3rem;
 }
 
 .sub-title{
@@ -240,7 +227,7 @@ padding-top: 0.5rem;
   margin: auto;
 }
 footer { /* */
-  background-color: rgb(247, 250, 251);  
+  background-color: rgb(52, 178, 216);  
   border-top: solid;
   display: flex; 
   justify-content: space-around; 
@@ -254,8 +241,8 @@ footer { /* */
   }
 }
 
-/*her tror vi det er scaling???*/
-@media  screen and (max-width: 75rem){ 
+/*scaling til grid og footer for når man minimierer vinduet*/
+@media  screen and (max-width: 62rem){ 
     .grid-container{
         display: block !important; 
         flex-direction: column;
@@ -270,14 +257,7 @@ footer {
     table-layout: fixed;
     border-spacing: 1.2rem;
 }
-header { 
-    display: grid;
-    grid-template-columns: minmax(20rem, 25rem);
-    width: 100%;
-    display: table;
-    table-layout: fixed;
-    border-spacing: 1.2rem;
-}
+
 }
 
 
