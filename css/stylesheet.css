@@ -2,105 +2,78 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
 }
+
 body{
-  background-color: whitesmoke;
-  /* skriver 0 i marg så bakgrunnsfargen til menyen gå helt ut til sidene*/
-  margin-left: 0rem;
+  background-color: whitesmoke; 
+  margin-left: 0rem; /* skriver 0 i marg så bakgrunnsfargen til menyen gå helt ut til sidene*/
   margin-right: 0rem;
   margin-top: -1rem;
   margin-bottom: 0rem;
-  /*bruker font family i ønsket rekkefølge, itilfelle enkelte fonter ikke er tilgjengelige for brukeren*/
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif; /*bruker font family i ønsket rekkefølge, itilfelle enkelte fonter ikke er tilgjengelige for brukeren*/
 }
 
-.header{ /* */
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: rgb(52, 178, 216);
-  padding: 0 25px;
+img{
+  /*setter bredden og høyden til bildet til 50rem og 35rem. Vi bruker rem for å få en responsiv nettside.*/
+  width: 30rem;
+  border-radius: 1rem;
+  }
 
+ul { /*generell styling for type liste som brukes*/ 
+  list-style-type: none;  
 }
 
 /* MENYBAR*/
-.menu{ /*Menybaren vil være blå i bakgrunn og vil være utbredt med lik avstand mellom knappene*/
-  background-color: rgb(52, 178, 216);
+.menu{ /*Menybaren vil være utbredt med lik avstand mellom knappene*/
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   padding-top: 2rem;
+  cursor: pointer;
 }
 
-
-
-.menu a{ /*design til meny */
-  float: left;
-  display: block;
+.menu li a{ /*tekstdesign i meny*/
   color: black;
-  font-size: large;
-  text-decoration: none;
   font-weight: bold;
-  font-size: 1.3rem;
-}
-
-.menu li a{ 
-  color: black;
   text-decoration: none;
   display: block;
   padding: 2.5rem 1.5rem;
-  font-size: 1.1rem;
   line-height: 1;
   font-size: 1.3rem;
-  
-  
-  /*slutter her*/
-
 }
 
 .menu li a:hover{ /*menyknappene blir hvit når man har musen over*/
-      color: white;
- 
-      
+      color: white;   
 }
+/*meny slutter her*/
 
-/*hamburger */
-
-.hamburger{  /*Deign på menyknappene i scailing. Det er de tre strekene(hamburger) som kommer opp*/
+/*hamburger*/
+.hamburger{  /*Deignet til hamburger-meny knappen*/
   position: relative;
   width: 1.8rem;
   height: 0.25rem;
   background: black;
-  cursor: pointer;
-  z-index: 2;
-  
-
+  z-index: 2; /*gjør at man ikke kan overlappe elementer*/
 }
 
-.hamburger:before,
-.hamburger:after{
+.hamburger:before, .hamburger:after{ /*øverste og nederste strek i hamburger-meny*/
   content: "";
   position: absolute;
   height: 0.25rem;
   right: 0;
   background: black;
-
+  width: 1.25rem;
 }
 
 .hamburger:before{ /*hamburger streken på toppen i menybaren*/
   top: -0.6rem;
-  width: 1.25rem;
 }
-.hamburger:after{/*hamburger streken på bunnen i menybaren*/
+
+.hamburger:after{ /*hamburger streken på bunnen i menybaren*/
   top: 0.6rem;
-  width: 1.25rem;
 }
 
-
-.checkbox-menu{ /*en checkboks for menyknappen for å få ut meny delen*/
+.checkbox-menu{ /*knappen som viser menyen når den er skalert*/
   position: absolute;
   width: 1.8rem;
   height: 6.25rem;
@@ -109,14 +82,75 @@ body{
   opacity: 0;
 }
 
-/*hamburger */
-
-
-.navigation input:checked ~ .menu{  /* Når inndatafeltet er sjekket, vises menyen ved å plassere den til høyre */
+.navigation input:checked ~ .menu{ /* Når inndatafeltet er sjekket, vises menyen ved å plassere den til høyre*/
   right: 0;
 }
+/*slutt på hamburger*/
 
-@media screen and (max-width: 62rem){   /* Når skjermstørrelsen er 992 piksler eller mindre vises både .hamburger og .checkbox-menu som blokkelementer*/
+.header{ /*Designet på øverste del av siden som inneholder logo og meny*/
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(52, 178, 216);
+  padding: 0 1.5rem;
+}
+
+.main-title{ /*hovedoverskrift*/
+  font-size: 2.2rem;
+  margin: 3rem;
+}
+
+.intro-text { /*p klasse gjort spesifisert styling endringer*/
+  font-weight: bold;
+  font-size: larger;
+  margin: 3rem;
+}
+
+.sub-title{ /*underoverskrift størrelse*/
+  font-size: 1.7rem;
+  margin: 3rem;
+}
+
+.text-content{ /*generell tekststørrelse*/
+  font-size: 1.2rem;
+  margin: 3rem;
+}
+
+.main-img {
+  display: block;
+  margin: auto;
+}
+
+.caption {/*bildetekst, styler til lysegrå tekst*/
+  font-style: italic;
+  color: rgb(95, 92, 92);
+  text-align: center;
+}
+
+.social-media{ /*sosialemedie ikoner*/
+height: 2.5rem;
+width: 2rem;
+padding-top: 0.5rem;
+}
+
+footer{ /*Farge, tekst og plassering av elementer i footer*/
+  background-color: rgb(52, 178, 216);  
+  border-top: solid;
+  display: flex; 
+  justify-content: space-around; 
+  padding: 2.5rem;  
+  line-height: 2.2rem;  
+  font-weight: bold;
+
+  a:link {  
+    color: rgb(0, 0, 0); /*fargen på lenkene*/
+    text-decoration: none; /*gjør at det ikke er kulepunkter foran liste elementene*/
+  }
+}
+
+@media screen and (max-width: 70rem){ /* Når skjermstørrelsen er 70rem eller mindre vises både .hamburger og .checkbox-menu som blokkelementer*/
   .hamburger,
   .checkbox-menu{
       display: block;
@@ -137,127 +171,73 @@ body{
       margin-top: 1.25rem;
   }
 
-  .menu li{
-      width: 100%;
-  }
-  .menu li a{
+
+  .menu li a{ /*størrelse på teksten*/
       font-size: 1.5rem;
   }
 }
 
-/*dette gir navn til hver gridboksene som vi skal plassere på nettsiden */
-.item1 { grid-area: text1; }
-.item2 { grid-area: picture2; }
-.item3 { grid-area: picture3; }
-.item4 { grid-area: text4; }
-.item5 { grid-area: text5;}
-.item6 { grid-area: picture6; }
-
-.grid-container { /*plasserer grid boksene riktig plass*/
-  display: grid;
-  grid-template-areas:
-    'text1 text1 picture2 picture2'
-    'picture3 picture3 text4 text4'
-    'text5 text5 picture6 picture6' ;
-
-    gap: 0.625rem;
-    background-color: whitesmoke;
-   padding: 0.625rem;
-
-}
-
-.grid-container > div { /*styler grid boksene*/
-  background-color: whitesmoke;
-  text-align: center;
-  padding: 3rem ;
-}
-
-img{
-  /*setter bredden og høyden til bildet til 50rem og 35rem. Vi bruker rem for å få en responsiv nettside.*/
-  width: 30rem;
-  border-radius: 1rem;
-  }
-/*slutt grid*/
-
-/*spesifike stylinger*/
-ul {   /*generell styling for type liste som brukes*/ 
-  list-style-type: none;  
-}
-
-.text-content{ /*generell tekststørrelse*/
-    font-size: 1.2rem;
-    margin: 3rem;
-}
-
-.main-title{ /*hovedoverskrift*/
-    font-size: 2.2rem;
-    margin: 3rem;
-}
-
-.sub-title{
-  font-size: 1.7rem;
-  margin: 3rem;
-}
-
-.intro-text { /*p klasse gjort spesifisert styling endringer*/
-  font-weight: bold;
-  font-size: larger;
-  margin: 3rem;
-}
-
-.caption {/*bildetekst, styler til lysegrå tekst*/
-  font-style: italic;
-  color: rgb(95, 92, 92);
-  text-align: center;
-}
-
-.social-media{ /* tydelige sosialemedie ikoner*/
-height: 2.5rem;
-width: 2rem;
-padding-top: 0.5rem;
-}
-
-#skoletilbudetOrakel{ /*sentrerer spesifikt dette bildet*/
-  display: block;
-  margin: auto;
-}
-
-#accessibility-test{/*sentrerer spesifikt dette bildet*/
-  display: block;
-  margin: auto;
-}
-footer { /* */
-  background-color: rgb(52, 178, 216);  
-  border-top: solid;
-  display: flex; 
-  justify-content: space-around; 
-  padding: 2.5rem;  
-  line-height: 2.2rem;  
-  font-weight: bold;
-
-  a:link {  
-    color: rgb(0, 0, 0);    
-    text-decoration: none;  
-  }
-}
-
-/*scaling til grid og footer for når man minimierer vinduet*/
-@media  screen and (max-width: 62rem){ 
+/*scaling til grid, footer, logo og bilder for når man minimierer vinduet og dens plassering*/
+@media  screen and (max-width: 70rem){ 
     .grid-container{
         display: block !important; 
-        flex-direction: column;
- 
+        flex-direction: column; 
 } 
-footer { 
+
+footer{ 
     display: grid;
-    grid-template-columns: minmax(20rem, 25rem) 
-    ;
+    grid-template-columns: minmax(20rem, 25rem);
     width: 100%;
     display: table;
     table-layout: fixed;
     border-spacing: 1.2rem;
 }
 
+.logo{ 
+  max-width: 30%;
 }
 
+img{
+  max-width: 70%;
+  width: 100%;
+}
 
+#skoletilbudetOrakel{ /*sentrerer spesifikt dette bildet*/
+  max-width: 40%;
+}
+
+#accessibility-test{ /*sentrerer spesifikt dette bildet*/
+  max-width: 40%;
+}
+}
+
+/*dette gir navn til hver gridboksene som vi skal plassere på nettsiden */
+.item1 { grid-area: text1;}
+.item2 { grid-area: picture2;}
+.item3 { grid-area: picture3;}
+.item4 { grid-area: text4;}
+.item5 { grid-area: text5;}
+.item6 { grid-area: picture6;}
+
+.grid-container { /*plasserer grid boksene riktig plass*/
+  display: grid;
+  grid-template-areas:
+    'text1 text1 picture2 picture2'
+    'picture3 picture3 text4 text4'
+    'text5 text5 picture6 picture6';
+  gap: 0.625rem;
+  background-color: whitesmoke;
+  padding: 0.625rem;
+}
+
+.grid-container > div { /*styler grid boksene*/
+  background-color: whitesmoke;
+  text-align: center;
+  padding: 3rem;
+}
+/*slutt grid*/
+
+#skoletilbudetOrakel{ /*sentrerer spesifikt dissee bildene*/
+  display: block;
+  margin: auto;
+}
